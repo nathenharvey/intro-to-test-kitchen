@@ -1,5 +1,13 @@
 # Introduction to Test Kitchen
 
+An introduction to using [Test Kitchen](https://kitchen.ci/).  Kitchen provides a test harness to execute infrastructure code on one or more platforms in isolation.
+
+This repository contains sample test kitchen configurations for various providers.
+
+## Basic Test Kitchen
+
+Bare bones test kitchen set-up.  Created using `kitchen init`.  No configuration or verification is included.  This is a quick way to create local infrastructure for testiing.
+
 # License
 
 |                      |                                          |
