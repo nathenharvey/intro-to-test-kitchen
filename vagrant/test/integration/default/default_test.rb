@@ -16,5 +16,6 @@ end
 describe command('which git') do
   its('exit_status') { should eq 0 }
   its('exit_status') { should cmp '0' }
+  its('exit_status') { should cmp 0 }
 end
 
