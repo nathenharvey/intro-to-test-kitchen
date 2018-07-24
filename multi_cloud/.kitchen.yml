@@ -1,0 +1,70 @@
+---
+provisioner:
+  name: chef_zero
+  # You may wish to disable always updating cookbooks in CI or other testing environments.
+  # For example:
+  #   always_update_cookbooks: <%= !ENV['CI'] %>
+  always_update_cookbooks: true
+
+verifier:
+  name: inspec
+
+platforms:
+  - name: ubuntu-16.04
+    driver:
+      name: vagrant
+  - name: ubuntu-16.04-gcp
+    driver:
+      name: gce
+      project: test-kitchen-211118
+      zone: us-east1-b
+      email: nharvey@chef.io
+      tags:
+        - test-kitchen
+      service_account_scopes:
+        - devstorage.read_write
+        - userinfo.email
+      image_project:  ubuntu-os-cloud
+      image_family:  ubuntu-1604-lts
+      metadata:
+        application: ubuntu
+        release:  a
+        version:  1604
+    transport:
+      username:  nathenharvey
+      ssh_key:
+        -  ~/.ssh/nathenharvey-chef-gcp
+  - name: centos-7
+    driver:
+      name: vagrant
+  - name: centos-7-gcp
+    driver:
+      name: gce
+      project: test-kitchen-211118
+      zone: us-east1-b
+      email: nharvey@chef.io
+      tags:
+        - test-kitchen
+      service_account_scopes:
+        - devstorage.read_write
+        - userinfo.email
+      image_project:  centos-cloud
+      image_family:  centos-7
+      metadata:
+        application:  centos
+        release:  a
+        version:  7
+    transport:
+      username:  nathenharvey
+      ssh_key:
+        -  ~/.ssh/nathenharvey-chef-gcp
+
+
+suites:
+  - name: default
+    run_list:
+      - recipe[multi_cloud::default]
+    verifier:
+      inspec_tests:
+        - test/integration/default
+    attributes:

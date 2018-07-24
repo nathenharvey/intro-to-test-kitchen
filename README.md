@@ -14,7 +14,11 @@ Simple test kitchen utilizing Vagrant as the provider.  This kitchen was created
 
 ## Kitchen with Google Cloud Platform
 
-Simple test kitchen utilizing Google Cloud Platform as the provider.  This kitchen was created using the Chef Development Kit using the command `chef generate cookbook gcp`.  It includes a simple recipe to install `git` and [InSpec](https://www.inspec.io/) tests to verify the package has been installed.
+Simple test kitchen utilizing Google Cloud Platform as the provider.  This kitchen was created using the Chef Development Kit using the command `chef generate cookbook gcp`.  It includes a simple recipe to install `git` and [InSpec](https://www.inspec.io/) tests to verify the package has been installed.  The `.kitchen.yml` file was updated to include requirements for Google Cloud Platform.
+
+## Multi-provider kitchen
+
+Simple test kitchen utilizing both Vagrant and Google Cloud Platform as the providers.  This kitchen was created using the Chef Development Kit using the command `chef generate cookbook multi_cloud`.  It includes a simple recipe to install `git` and [InSpec](https://www.inspec.io/) tests to verify the package has been installed.  The `.kitchen.yml` file was updated to include requirements for both Vagrant and Google Cloud Platform.
 
 # License
 
