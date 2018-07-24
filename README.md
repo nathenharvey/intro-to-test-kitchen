@@ -8,6 +8,10 @@ This repository contains sample test kitchen configurations for various provider
 
 Bare bones test kitchen set-up.  Created using `kitchen init`.  No configuration or verification is included.  This is a quick way to create local infrastructure for testiing.
 
+## Local Test Kitchen with Vagrant
+
+Simple test kitchen utilizing Vagrant as the provider.  This kitchen was created using the Chef Development Kit using the command `chef generate cookbook vagrant`.  It includes a simple recipe to install `git` and [InSpec](https://www.inspec.io/) tests to verify the package has been installed.
+
 # License
 
 |                      |                                          |
