@@ -4,8 +4,8 @@
 
 |                      |                                          |
 |:---------------------|:-----------------------------------------|
-| **Author:**          | Nathen Harvey (<nathen.harvey@gmail.com>)
-| **Copyright:**       | Copyright 2018, Nathen Harvey
+| **Author:**          | Nathen Harvey (<nharvey@chef.io>)
+| **Copyright:**       | Copyright 2018, Chef Software, Inc.
 | **License:**         | Apache License, Version 2.0
 
 ```
