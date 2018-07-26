@@ -20,6 +20,10 @@ Simple test kitchen utilizing Google Cloud Platform as the provider.  This kitch
 
 Simple test kitchen utilizing a mix of vagrant and docker as the providers.  This kitchen uses Puppet at the provisioner and [InSpec](https://www.inspec.io) as the verifier.
 
+## Ansible Example
+
+Simple test kitchen utilizing docker as the provider.  This kitchen uses Ansible at the provisioner and [InSpec](https://www.inspec.io) as the verifier.
+
 ## Multi-provider kitchen
 
 Simple test kitchen utilizing both Vagrant and Google Cloud Platform as the providers.  This kitchen was created using the Chef Development Kit using the command `chef generate cookbook multi_cloud`.  It includes a simple recipe to install `git` and [InSpec](https://www.inspec.io/) tests to verify the package has been installed.  The `.kitchen.yml` file was updated to include requirements for both Vagrant and Google Cloud Platform.
