@@ -13,6 +13,11 @@ platforms:
   - name: ubuntu-16.04
     driver:
       name: vagrant
+  - name: ubuntu-16.04-docker
+    driver:
+      name: docker
+      image: ubuntu:16.04
+      platform: ubuntu
   - name: ubuntu-16.04-aws
     driver:
       name: ec2
@@ -49,6 +54,11 @@ platforms:
   - name: centos-7
     driver:
       name: vagrant
+  - name: centos-7-docker
+    driver:
+      name: docker
+      image: centos:7
+      platform: centos
   - name: centos-7-aws
     driver:
       name: ec2
