@@ -14,7 +14,24 @@ verifier:
 
 platforms:
   - name: ubuntu-16.04
+    driver_config:
+      tags:
+        created-by: 'test-kitchen'
+        name: 'test-kitchen-ubuntu-16.04'
+        Name: 'test-kitchen-ubuntu-16.04'
+        X-Contact: nharvey@chef.io
+        X-Dept:  Community Engineering
+        X-Project: meetup
+        X-TTL: 1 day
   - name: centos-7
+    driver_config:
+      tags:
+        created-by: 'test-kitchen'
+        Name: 'test-kitchen-centos-7'
+        X-Contact: nharvey@chef.io
+        X-Dept:  Community Engineering
+        X-Project: meetup
+        X-TTL: 1 day
 
 suites:
   - name: default
