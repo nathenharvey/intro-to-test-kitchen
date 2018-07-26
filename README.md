@@ -16,6 +16,10 @@ Simple test kitchen utilizing Vagrant as the provider.  This kitchen was created
 
 Simple test kitchen utilizing Google Cloud Platform as the provider.  This kitchen was created using the Chef Development Kit using the command `chef generate cookbook gcp`.  It includes a simple recipe to install `git` and [InSpec](https://www.inspec.io/) tests to verify the package has been installed.  The `.kitchen.yml` file was updated to include requirements for Google Cloud Platform.
 
+## Kitchen with Amazon Web Services
+
+Simple test kitchen utilizing Amazon Web Services as the provider.  This kitchen was created using the Chef Development Kit using the command `chef generate cookbook aws`.  It includes a simple recipe to install `git` and [InSpec](https://www.inspec.io/) tests to verify the package has been installed.  The `.kitchen.yml` file was updated to include requirements for Amazon Web Services.
+
 ## Puppet Example
 
 Simple test kitchen utilizing a mix of vagrant and docker as the providers.  This kitchen uses Puppet at the provisioner and [InSpec](https://www.inspec.io) as the verifier.
