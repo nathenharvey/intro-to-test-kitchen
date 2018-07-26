@@ -1,0 +1,25 @@
+---
+driver:
+  name: vagrant
+
+provisioner:
+  name: puppet_apply
+  manifests_path:  manifests
+  modules_path:  modules
+  require_chef_for_busser: false
+
+platforms:
+  - name: ubuntu-16.04
+    # Let's use docker here :)
+    driver:
+      name:  docker
+  - name: centos-7
+
+suites:
+  - name: default
+
+verifier:
+  name: inspec
+  inspec_tests:
+    - test/integration/default
+
