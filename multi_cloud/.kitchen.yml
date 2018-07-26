@@ -13,6 +13,18 @@ platforms:
   - name: ubuntu-16.04
     driver:
       name: vagrant
+  - name: ubuntu-16.04-aws
+    driver:
+      name: ec2
+      image_id: ami-759bc50a
+    driver_config:
+      tags:
+        created-by: 'test-kitchen'
+        Name: 'test-kitchen-ubuntu-16.04'
+        X-Contact: nharvey@chef.io
+        X-Dept:  Community Engineering
+        X-Project: meetup
+        X-TTL: 1 day
   - name: ubuntu-16.04-gcp
     driver:
       name: gce
@@ -37,6 +49,18 @@ platforms:
   - name: centos-7
     driver:
       name: vagrant
+  - name: centos-7-aws
+    driver:
+      name: ec2
+      image_id: ami-9887c6e7
+    driver_config:
+      tags:
+        created-by: 'test-kitchen'
+        Name: 'test-kitchen-centos-7'
+        X-Contact: nharvey@chef.io
+        X-Dept:  Community Engineering
+        X-Project: meetup
+        X-TTL: 1 day
   - name: centos-7-gcp
     driver:
       name: gce
