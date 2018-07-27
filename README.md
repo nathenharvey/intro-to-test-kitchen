@@ -4,6 +4,8 @@ An introduction to using [Test Kitchen](https://kitchen.ci/).  Kitchen provides 
 
 This repository contains sample test kitchen configurations for various providers.
 
+Slides that accompany this code are available on [SlideShare](https://www.slideshare.net/nathenharvey/introduction-to-test-kitchen), videos demonstrating the code in action are available in this [Introduction to Test Kitchen playlist on YouTube](https://www.youtube.com/watch?v=uZXxsszf4X4&list=PLKK5zTDXqzFPVe9ZR4vTZvho-juFHAqbw&index=1).
+
 ## Basic Test Kitchen
 
 Bare bones test kitchen set-up.  Created using `kitchen init`.  No configuration or verification is included.  This is a quick way to create local infrastructure for testiing.
