@@ -6,6 +6,11 @@ This repository contains sample test kitchen configurations for various provider
 
 Slides that accompany this code are available on [SlideShare](https://www.slideshare.net/nathenharvey/introduction-to-test-kitchen), videos demonstrating the code in action are available in this [Introduction to Test Kitchen playlist on YouTube](https://www.youtube.com/watch?v=uZXxsszf4X4&list=PLKK5zTDXqzFPVe9ZR4vTZvho-juFHAqbw&index=1).
 
+A longer form of this presentation, which includes a bit more about InSpec is also available.
+
+* [SlideShare](ttps://www.slideshare.net/nathenharvey/introduction-to-test-kitchen-and-inspec) with embedded videos.
+* [YouTube Playlist](https://www.youtube.com/watch?v=upyqVByqOR8&t=44s&index=2&list=PLKK5zTDXqzFNnVFefaTKDl5EFHR3BoIdG) which includes a livestream from the Baltimore DevOps Meetup in July 2018.
+
 ## Basic Test Kitchen
 
 Bare bones test kitchen set-up.  Created using `kitchen init`.  No configuration or verification is included.  This is a quick way to create local infrastructure for testiing.
